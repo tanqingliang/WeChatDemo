@@ -1,0 +1,40 @@
+<!--忘记密码-->
+<view class="container">
+    <view class="page__bd">
+        <view class="page__hd">
+            <view class="page__title text-center">
+                <image src="/images/edoctor/edoctor-logo.png" mode="aspectFit" style="width:10rem;height:4rem;"/>
+            </view>
+            <text class="page__desc text-center">eDoctor 将创新的信息技术、视觉设计与医药营销有效整合，深入垂直市场，持续创新</text>
+        </view>
+
+        <view class="weui-cells weui-cells_form">
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number" placeholder="请输入手机号"/>
+                </view>
+
+            </view>
+            <view class="weui-cell weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <label class="weui-label">验证码</label></view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入验证码"/>
+                </view>
+                <view class="weui-cell__ft">
+                    <button class="weui-vcode-btn">获取验证码</button>
+                </view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn weui-btn_primary">确定</button>
+        </view>
+    </view>
+    <view class="page__ft text-center">
+        <navigator class="link" url="login">登陆</navigator>
+        <navigator class="link" url="regist">注册</navigator>
+    </view>
+</view>
