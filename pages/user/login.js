@@ -34,7 +34,7 @@ Page({
             return;
         }
 
-        if(e.detail.value.mobile != '17091959740' || e.detail.value.pwd != '123456'){
+        if(e.detail.value.mobile != '110' || e.detail.value.pwd != '123456'){
             //弹出对话框
             this.setData({
                 modalMsg : '手机或密码错误，登陆失败。',
@@ -42,8 +42,8 @@ Page({
             })
         } else {
             app.globalData.userInfo = {
-                userName : '谭青亮',
-                mobile : '17091959740'
+                userName : 'Demo',
+                mobile : '110'
             };
             wx.redirectTo({url : '../news/list'});
         }
