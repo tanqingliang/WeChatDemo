@@ -1,0 +1,21 @@
+<!--新闻列表-->
+<scroll-view class="container" scroll-y="true" style="height: 100%;">
+    <view class="weui-panel weui-panel_access">
+        <loading hidden="{{loadingHidden}}">
+            加载中...
+        </loading>
+
+        <view class="weui-panel__bd" wx:if="{{loadingHidden}}">
+            <navigator class="weui-media-box weui-media-box_appmsg" wx:for-items="{{list}}" url="info?id={{item.id}}">
+                <view class="weui-media__hd">
+                    <image class="weui-media__thumb" src="{{item.images.medium}}"/>
+                </view>
+                <view class="weui-media__bd" style="width:calc(100% - 80px);">
+                    <text class="weui-media__title">{{item.title}}</text>
+                    <text class="weui-media__desc">年份：{{item.year}}</text>
+                    <text class="weui-media__desc">评分：{{item.rating.average}}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</scroll-view>

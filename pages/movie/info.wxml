@@ -1,0 +1,34 @@
+<!--电影详情-->
+<scroll-view class="container" scroll-y="true" style="height: 100%;">
+    <view class="page__bd">
+        <loading hidden="{{loadingHidden}}">
+            加载中...
+        </loading>
+        <view class="weui-article" wx:if="{{loadingHidden}}">
+            <text class="page__title">{{item.title}}</text>
+            <view class="page__desc">
+                <text>
+                    年份：{{item.year}}
+                </text>
+                <text>
+                    评分：{{item.rating.average}}
+                </text>
+                <view>
+                    演员：
+                    <text style="display:inline-block; padding-right:5px;" wx:for-items="{{item.casts}}">
+                        {{item.name}}
+                    </text>
+                </view>
+            </view>
+
+
+            <view class="text-center" style="margin:25px 0;">
+                <image style="width:100%;" src="{{item.images.large}}"/>
+            </view>
+            <text style="line-height:180%;">
+                {{item.summary}}
+            </text>
+
+        </view>
+    </view>
+</scroll-view>

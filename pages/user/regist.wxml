@@ -57,7 +57,7 @@
         </view>
     </view>
     <view class="page__ft text-center">
-        <navigator class="link" url="login">直接登陆</navigator>
-        <navigator class="link" url="forget">忘记密码</navigator>
+        <navigator class="link" redirect url="login">直接登陆</navigator>
+        <navigator class="link" redirect url="forget">忘记密码</navigator>
     </view>
 </view>

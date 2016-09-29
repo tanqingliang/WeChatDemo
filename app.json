@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/movie/search",
+    "pages/movie/list",
+    "pages/movie/info",
     "pages/news/list",
     "pages/news/info",
     "pages/user/login",
     "pages/user/regist",
-    "pages/user/forget",
-    "pages/user/my"
+    "pages/user/forget"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,8 +18,16 @@
   "tabBar": {
     "list": [
       {
+        "pagePath": "pages/movie/search",
+        "text": "电影"
+      },
+      {
         "pagePath": "pages/news/list",
         "text": "新闻"
+      },
+      {
+        "pagePath": "pages/user/login",
+        "text": "登陆"
       }
     ]
   }

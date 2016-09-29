@@ -1,0 +1,27 @@
+<!--登陆-->
+<view class="container">
+    <view class="page__bd">
+        <view class="page__hd">
+            <view class="page__title text-center">
+                <image src="/images/edoctor/edoctor-logo.png" mode="aspectFit" style="width:10rem;height:4rem;"/>
+            </view>
+            <text class="page__desc text-center">eDoctor 将创新的信息技术、视觉设计与医药营销有效整合，深入垂直市场，持续创新</text>
+        </view>
+        <form bindsubmit="formSubmit">
+            <view class="weui-cells weui-cells_form">
+                <view class="weui-cell">
+                    <!--<view class="weui-cell__hd">-->
+                        <!--<label class="weui-label">电影</label>-->
+                    <!--</view>-->
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" type="text" name="tag" placeholder="请输入电影关键字"/>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-btn-area">
+                <button formType="submit" class="weui-btn weui-btn_primary">搜索</button>
+            </view>
+        </form>
+    </view>
+    <view class="page__ft text-center"></view>
+</view>

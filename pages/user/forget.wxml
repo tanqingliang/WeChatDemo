@@ -34,7 +34,7 @@
         </view>
     </view>
     <view class="page__ft text-center">
-        <navigator class="link" url="login">登陆</navigator>
-        <navigator class="link" url="regist">注册</navigator>
+        <navigator class="link" redirect url="login">登陆</navigator>
+        <navigator class="link" redirect url="regist">注册</navigator>
     </view>
 </view>
